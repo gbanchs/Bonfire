@@ -1,0 +1,444 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}                 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+
+html, body { height: 100%; position: relative; }
+body {
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	background: #eee;
+	color: #333;
+}
+
+h2 {
+	font-size: 1.5em;
+	padding-top: 1.15em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.625em;
+	color: #111;
+	font-weight: normal;
+}
+p {	margin-bottom: 1em; }
+p.small { 
+	font-size: 85%;
+	color: #999;
+	font-weight: lighter;
+	margin-left: 28%;
+}
+form .indent {
+	margin-left: 28%;
+}
+ul {
+	list-style-position: inside;
+	margin-left: 2em;
+}
+
+a:link, a:visited { color: #06c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page, .foot {
+	width: 780px;
+	margin: 0 auto;
+	background: #fcfcfc;
+}
+.page {
+	-webkit-box-shadow: 0 0 10px #999;
+	padding-top: 0;
+	border: 1px solid #aaa;
+	border-top: 0;
+}
+.foot {
+	background: transparent;
+	font-size: 0.75em;
+	color: #777;
+	padding-top: 10px;
+	padding-left: 80px;
+}
+.foot a:link,
+.foot a:visited {
+	color: #777;
+	font-weight: bold;
+}
+
+.head {
+	color: #fff;
+	background: #333;
+	padding: 20px 40px 10px 40px;
+}
+.head h1 {
+	font-size: 2.75em;
+	text-shadow:0 0 4px #844, 0 -3px 4px #FFFF33, 2px -6px 6px #FFDD33, -2px -12px 11px #FF8800, 2px  -18px 18px #FF2200;  
+}
+.main {
+	padding: 20px 40px;	
+}
+
+/* !NOTIFICATIONS */
+.notification {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin:  10px 0 20px 0;
+	padding: 5px 20px;
+}
+#message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0.75em;
+	z-index: 100;
+	text-align: center;
+}
+#message .notification {
+	display: block;
+	margin: 0 auto;
+	width: auto !important;
+}
+.notification p, .notification ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	text-indent: none;
+}
+.attention {
+    background: #fffbcc;
+    border-color: #e6db55;
+    color: #666452;
+}
+.information {
+	background: #dbe3f0;
+	border-color: #a2b4ee;
+	color: #383b46;
+}
+.success {
+	background: #d5f0ce;
+	border-color: #9adf8f;
+	color: #556652;
+}
+.error {
+	background-color: #f0cece;
+	border-color:  #df8f8f;
+	color:  #533232;
+}
+
+/* BUTTONS */
+.button,
+a.button,
+input[type=submit],
+.button-group {
+	padding: 0.5em 1em;
+	position:relative;
+	top: -1px;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:12px;
+	line-height: 0.95;
+	color:#333;
+	text-shadow:1px 1px 0 #fff;
+	white-space:nowrap;
+	border:none;
+	overflow:visible;
+	background:#ddd;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#e1e1e1));
+	background:-moz-linear-gradient(-90deg,#fff,#e1e1e1);
+	border: 1px solid #cbcbcb;
+	border-bottom:1px solid #ababab;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+/*	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3); */
+	cursor:pointer;
+}
+.button:hover,
+input[type=submit]:hover {
+	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	border: 1px solid #ababab;
+	border-bottom: 1px solid #8b8b8b;
+	text-decoration: none;
+}
+.button:active,
+input[type=submit]:active {
+	border: 1px solid #ababab;
+	border-top: 1px solid #8b8b8b;
+	border-left: 1px solid #8b8b8b;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#eee),to(#b1b1b1));
+	background:-moz-linear-gradient(-90deg,#ddd,#c1c1c1);
+}
+
+
+/* FORM */
+form div {
+	padding: 5px 0;
+}
+label {
+	display: inline-block;
+	width: 25%;
+	margin-right: 2%;
+	text-align: right;
+}
+label.remember {width: 50%;}
+input[type=text],
+input[type=email],
+input[type=password] {
+	width: 55%;
+	padding: 3px 5px;
+	font-size: 1.125em;
+	color: #666;
+}
+.submits {
+	width: 77%;
+	padding: 40px 50px;
+	text-align: right;
+}
+
+.profile{text-align:right}
+
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 30.06.2009
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <ul><li><a href="#"><span>level 3</span></a></li></ul>
+ *                  </li>
+ *              </ul>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+
+/* menu::base */
+div#menu {
+    height: 51px;
+    padding-left: 14px;
+    background: url(images/left.png) no-repeat;
+    _background: url(images/left.gif) no-repeat;
+    width:auto;
+}
+
+div#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+div#menu ul.menu {
+    padding-right: 14px;
+    background: url(images/right.png) no-repeat right 0;
+    _background: url(images/right.gif) no-repeat right 0;    
+}
+
+div#menu li {
+    position: relative;
+    margin: 0;
+    padding: 0 0px 0 0;
+    display: block;
+    float: left;
+    z-index: 9;
+    width: auto;
+}
+div#menu ul ul li {
+    z-index: 9;
+}
+div#menu li div {
+    list-style: none;
+    float: left;
+    position: absolute;
+    z-index: 11;
+    top: 51px;
+    left: -13px;
+    visibility: hidden;
+    width: 194px;
+	  margin: 0px 0 0 -4px;
+    padding: 0; 
+    background: url(images/subsubmenu-top.png) no-repeat 0px 0;
+    _background: url(images/subsubmenu-top.gif) no-repeat 0px 0;  
+}
+div#menu ul ul {
+	  z-index: 12;
+    padding: 0px 4px 10px 4px;
+    background: url(images/submenu-bottom.png) no-repeat 0px bottom;
+    _background: url(images/submenu-bottom.gif) no-repeat 0px bottom;        
+    margin: 10px 0 0 0;    
+}
+div#menu li:hover>div {
+    visibility: visible;
+}
+
+div#menu a {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 1px;
+    white-space: nowrap;
+    width: auto;
+    padding-right:5px;
+    text-align:center;
+}
+div#menu span {
+    margin-top: 2px;
+    padding-left: 15px;
+    color: #A6C4D5;
+    font: bold 13px Arial,Helvetica;
+    background: none;
+    line-height: 50px;	
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    text-align: center;
+}
+
+/* menu::level1 */
+div#menu a {
+    padding: 0 10px 0 0;
+    line-height: 50px;
+    height: 51px;
+    margin-right: 5px;
+    _margin-right: 1px;
+    background: none;
+}
+div#menu a:hover {
+    background:  url(images/selected.png)  repeat-x right -1px;
+	  color: #FFFFFF;
+  }
+div#menu li.current a,
+div#menu ul.menu>li:hover>a {
+	  color: #FFFFFF;	
+    background: url(images/selected.png)  repeat-x right -1px;
+}
+
+div#menu ul.menu>li:hover>a span {
+		color: #FFFFFF;
+}
+div#menu li {  }
+div#menu li.last { background: none; }
+
+/* menu::level2 */
+div#menu ul ul li {
+    background: none;
+    padding: 0;
+}
+div#menu ul ul a {
+    padding: 0px;
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 25px;
+    z-index: -1;
+    padding-left: 5px;
+    white-space: normal;
+    width: 164px;
+    margin: 0 8px;
+    text-transform: none;
+    border-top: 1px solid #3A5A8B;
+    border-bottom: 1px solid #162133;        
+}
+    
+div#menu ul ul a span {
+    font-weight:normal;
+	  padding: 0 5px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #C5D3E7;
+}
+div#menu li.current ul a,
+div#menu li.current ul a span {
+    background:none;
+}
+div#menu ul ul a:hover {
+ background:none;
+ background-color: #21345A;
+}
+div#menu ul ul a:hover span {
+	background:none;
+	color: #FFFFFF;
+}
+div#menu ul ul a.parent {
+  background: url(images/submenu-pointer.png) no-repeat right bottom;
+  _background: url(images/submenu-pointer.gif) no-repeat right bottom;  
+}
+div#menu ul ul a.parent span {
+  background:none; 
+}
+div#menu ul ul a.parent:hover {
+  background: url(images/submenu-pointer.png) no-repeat right bottom;
+  _background: url(images/submenu-pointer-hover.gif) no-repeat right bottom;
+  background-color: #21345A;
+	color: #FFFFFF;  
+}
+div#menu ul ul a.parent:hover span {
+  background:none; 
+}
+div#menu ul ul span {
+	
+    margin-top: 0;
+    text-align: left;
+}
+div#menu ul ul li.last { background: none; }
+div#menu ul ul li {
+    width: 100%;
+}
+
+/* menu::level3 */
+div#menu ul ul div {
+	  width: 194px;
+	  padding: 0;
+    margin: -51px 0 0 192px !important;
+    margin-left: 192px;
+}
+div#menu ul ul ul {
+    padding: 10px 4px 0 4px;	
+}
+div#menu ul ul div li {
+    position:relative;
+    top:-10px;
+}
+
+/* lava lamp */
+div#menu li.back {
+    background: url(images/selected.png) repeat-x 0 0;
+    width: 5px;
+    height: 51px;
+    z-index: 8;
+    position: absolute;
+    padding: 0;
+    margin: 0px 0 0 0;
+}
+
+div#menu li.back .left {
+    padding:0;
+    width:auto;
+    background: url(images/selected.png) repeat-x right 0;
+    height: 51px;
+    margin: 0 0 0 5px;
+    float: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: visible;
+}
